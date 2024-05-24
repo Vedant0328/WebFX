@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Challenge from './components/Challenge';
+import Footer from './components/Footer';
+import Social from './components/Social';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class='bg-slate-800 px-10 overflow-x-hidden'>
+      <Challenge />
+
+      <hr class='h-1 mx-6' />
+      <Footer />
+      <hr class='h-1 mx-6' />
+
+      <Social />
     </div>
   );
 }
